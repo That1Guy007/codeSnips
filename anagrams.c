@@ -23,7 +23,6 @@ int main(){
         arr[x] = 0;
     }
     
-    
     while(a[aSize++] != 0){
         arr[a[aSize-1] - 'a'] = arr[a[aSize-1] - 'a']+ 1;
     }
@@ -31,29 +30,6 @@ int main(){
         arr[b[bSize-1] - 'a'] = arr[b[bSize-1] - 'a']- 1;
         //printf("%d ",bSize-1);
     }
-    /*if(aSize > bSize){
-        big = aSize;
-        small = bSize;
-    }
-    else{
-        big = bSize;
-        small = aSize;
-    }
-    
-   for( i= 0; i <big ; i++){
-        for(j=0; j<small; j++){
-            if(big == aSize){
-                if(a[i] == b[j]){
-                    count++;
-                }
-            }
-            else{
-                if(b[i] == a[j]){
-                    count++;
-                }
-            }
-        }
-    }*/
     int answ = 0, idc; //= ((aSize - count)+(bSize - count));
     
     for(idc = 0; idc < 26; idc++){
